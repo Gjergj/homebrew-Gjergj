@@ -5,21 +5,21 @@
 class Testmyapp < Formula
   desc "Cli for testmyapp.io"
   homepage "https://github.com/gjergj/testmyapp"
-  version "0.0.14"
+  version "0.0.15"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.arm?
-    url "https://github.com/Gjergj/testmyapp/releases/download/v0.0.14/testmyapp_Darwin_arm64.tar.gz"
-    sha256 "641267aef2634f8369c0b4667ffdbddb33d03297ebe0e99e6deb2eca9263d014"
+    url "https://github.com/Gjergj/testmyapp/releases/download/v0.0.15/testmyapp_Darwin_arm64.tar.gz"
+    sha256 "6b1691edab9912118992b99bcb3db571c0b0743f78125eb6f2df2fbeb21d49b5"
 
     def install
       bin.install "testmyapp"
     end
   end
   if Hardware::CPU.intel?
-    url "https://github.com/Gjergj/testmyapp/releases/download/v0.0.14/testmyapp_Darwin_x86_64.tar.gz"
-    sha256 "2dbf0bb3b527e5ecad8838d60cae3c06d1466fc8359469200e488eba06a48a1e"
+    url "https://github.com/Gjergj/testmyapp/releases/download/v0.0.15/testmyapp_Darwin_x86_64.tar.gz"
+    sha256 "e570307175330bef70d5e4835a89f9f20a1e6399512b1d928f6c468bb2547e55"
 
     def install
       bin.install "testmyapp"
