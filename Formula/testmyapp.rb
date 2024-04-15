@@ -5,21 +5,21 @@
 class Testmyapp < Formula
   desc "Cli for testmyapp.io"
   homepage "https://github.com/gjergj/testmyapp"
-  version "0.0.70"
+  version "0.0.71"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Gjergj/testmyapp/releases/download/v0.0.70/testmyapp_Darwin_x86_64.tar.gz"
-      sha256 "6016e5a20cba1e3b3a1bf04bec933b2b51f0972c9a854d9603bd3e8936de9e78"
+      url "https://github.com/Gjergj/testmyapp/releases/download/v0.0.71/testmyapp_Darwin_x86_64.tar.gz"
+      sha256 "a9cbb3c242718780e08138419680bce5234a1245c047988528319ca74652f094"
 
       def install
         bin.install "testmyapp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Gjergj/testmyapp/releases/download/v0.0.70/testmyapp_Darwin_arm64.tar.gz"
-      sha256 "e994b38ae4251d9e3ac29f4e79371b0e4531b791a5bbad36cc4b9d6da6ba3ad6"
+      url "https://github.com/Gjergj/testmyapp/releases/download/v0.0.71/testmyapp_Darwin_arm64.tar.gz"
+      sha256 "11ec222082599370b38e9ea9023584cceec3baf5265f574cf3a4c42c60b7db0c"
 
       def install
         bin.install "testmyapp"
@@ -29,24 +29,16 @@ class Testmyapp < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/Gjergj/testmyapp/releases/download/v0.0.70/testmyapp_Linux_x86_64.tar.gz"
-      sha256 "84893c6e775b188fbdc6b897a77e1a9457e17309200d38f2376375050f9e3eb5"
-
-      def install
-        bin.install "testmyapp"
-      end
-    end
-    if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/Gjergj/testmyapp/releases/download/v0.0.70/testmyapp_Linux_armv6.tar.gz"
-      sha256 "d4fac23340a19d0935f675ce6f7b3c5b237f7402f16fd94d34530126c44e17bc"
+      url "https://github.com/Gjergj/testmyapp/releases/download/v0.0.71/testmyapp_Linux_x86_64.tar.gz"
+      sha256 "5ac8f78c6679fc3c5cde55b31ea2d1cf56dfd11538cbcaede26ca970474041de"
 
       def install
         bin.install "testmyapp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Gjergj/testmyapp/releases/download/v0.0.70/testmyapp_Linux_arm64.tar.gz"
-      sha256 "91b4b3d9a2e288452aecd0787f52cfe4e0e1241e34690f5f358ead78cb522960"
+      url "https://github.com/Gjergj/testmyapp/releases/download/v0.0.71/testmyapp_Linux_arm64.tar.gz"
+      sha256 "3979681d4f0e984767f11aa6e78dbe7b3d632a672500dd6c59e5825c24ed1eac"
 
       def install
         bin.install "testmyapp"
