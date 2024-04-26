@@ -5,21 +5,21 @@
 class Testmyapp < Formula
   desc "Cli for testmyapp.io"
   homepage "https://github.com/gjergj/testmyapp"
-  version "0.0.73"
+  version "0.0.74"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Gjergj/testmyapp/releases/download/v0.0.73/testmyapp_Darwin_x86_64.tar.gz"
-      sha256 "8e6fb0a36049ee5b82d9ee4e17463f7727fa00eb76c7040d4414bdba85967aeb"
+      url "https://github.com/Gjergj/testmyapp/releases/download/v0.0.74/testmyapp_Darwin_x86_64.tar.gz"
+      sha256 "e6d5791e25ccbb66fc53e8dffd7e9a760f3a5687ab990a6b25042d4852480d39"
 
       def install
         bin.install "testmyapp"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Gjergj/testmyapp/releases/download/v0.0.73/testmyapp_Darwin_arm64.tar.gz"
-      sha256 "dc1ace92e29c29abfbcc40236363b39a21af1e174789369693315a1520bc2a42"
+      url "https://github.com/Gjergj/testmyapp/releases/download/v0.0.74/testmyapp_Darwin_arm64.tar.gz"
+      sha256 "afe09427410a64fbff2575f1be06b12b8b611f479be9ed77b5d95e328129dbb2"
 
       def install
         bin.install "testmyapp"
@@ -29,16 +29,16 @@ class Testmyapp < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/Gjergj/testmyapp/releases/download/v0.0.73/testmyapp_Linux_x86_64.tar.gz"
-      sha256 "4496b8a6dc576bb15103e6c4f53b9fe3e10b5ed883db541432425c856b11224b"
+      url "https://github.com/Gjergj/testmyapp/releases/download/v0.0.74/testmyapp_Linux_x86_64.tar.gz"
+      sha256 "e750dea2cd95f46650b1157f2f4c5e73b955087a6b3507e9712d680028bcdc4a"
 
       def install
         bin.install "testmyapp"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Gjergj/testmyapp/releases/download/v0.0.73/testmyapp_Linux_arm64.tar.gz"
-      sha256 "651bac1e6e82ec13c1d3e620622f8e4b44f7f7e121e7fc7eb359fc35196b7a0f"
+      url "https://github.com/Gjergj/testmyapp/releases/download/v0.0.74/testmyapp_Linux_arm64.tar.gz"
+      sha256 "772162e3838d583bc6c0204fca370ed59bf182e09a8da0d4ae375f5a9948b44b"
 
       def install
         bin.install "testmyapp"
